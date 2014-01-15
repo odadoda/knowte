@@ -30,7 +30,7 @@ jQuery(document).ready( function(){
 
 	jQuery("#pewpew_searchform").submit( function( event ){
     	event.preventDefault();
-    	var url = "http://sourcetagsandcodes.no/tag/"+$(this).children("#pewpew_searchbar").val();
+    	var url = "/tag/"+$(this).children("#pewpew_searchbar").val();
     	window.location.href = url;
     	return false;
     });

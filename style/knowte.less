@@ -1,0 +1,165 @@
+/************************
+*   Variables
+************************/
+@knowte-blue: #145283;
+@knowte-transparent-1: rgba(250,250,250,0.9);
+
+
+/************************
+*   
+************************/
+
+h1,h2,h3,h4,h5,h6,div,span,p,li,ul,ol,table,tr,td,th,dd,dl,dt,a,time,input,textarea{
+	font-family: Menlo, monospace;	
+	font-size: 1em;
+	line-height: 1.8;
+}
+
+ol, ul {
+	padding: 0;
+	margin: 0;
+	list-style-position: inside;
+}
+
+h1, p, time {
+	margin: 0 0 10px;
+	font-weight: 100;
+}
+
+
+h1 {
+	margin: 0;
+	font-weight: bold;
+}
+
+
+h2 {    
+    text-shadow: 0px 0px 2px white;
+	
+	&:before {
+		content: "#####################################\A##";
+		margin: 0 5px 0 0;
+		white-space: pre;
+	}
+	
+	&:after {
+		content: "\A#####################################";
+		margin: 0 5px 0 0;
+		white-space: pre;
+	}
+}
+
+h3 { 
+    text-shadow: 0px 0px 1px white; 
+	
+	&:before {
+		content: "##";
+		margin: 0 5px 0 0;
+	}
+}
+
+/************************
+*   
+************************/
+
+body {
+    background: @knowte-blue;
+    color: @knowte-transparent-1;
+	font-size: 11px;
+}
+
+a { 
+    color: @knowte-transparent-1; 
+    font-size: inherit;
+}
+
+
+pre,
+code {
+    background: none repeat scroll 0 0 rgba(250, 250, 250, 0.2);
+    padding: 2px 12px;
+}
+
+#page {
+	padding: 20px 20px 0;
+}
+
+
+#pewpew_searchform {
+    margin: 0 0 20px;
+    
+    label {
+        content: ":";
+    }
+    input[type="text"] {
+        background: transparent;
+        border: 0 none;
+        color: #FFFFFF;
+        padding: 4px 6px;
+        max-width: 500px;
+    }
+}
+.posts {
+    list-style: none;
+	margin: 20px 0;
+	
+	li {
+    	overflow: hidden;
+    	margin: 0 0 30px;
+	}
+	
+	aside {
+    	width: 320px;
+    	float: left;
+    	padding: 0 20px 20px 0;
+    	
+    	.square {
+        	background: none repeat scroll 0 0 rgba(250, 250, 250, 0.2);
+            float: left;
+            margin: 3px 7px 0 0;
+            width: 85px;
+            
+            
+    	}
+    	ul {
+        	list-style: none;
+    	}
+    	li {
+        	border-bottom: 1px solid #145283;
+            color: #145283;
+            font-size: 9px;
+            margin: 0;
+            padding: 2px 3px;
+            
+            a {
+                text-decoration: none;
+            }
+    	}
+	}
+	
+	.main {
+    	padding: 0 0 20px;
+    	overflow: hidden;
+	}
+	
+	p {
+    	margin: 0 0 1em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
